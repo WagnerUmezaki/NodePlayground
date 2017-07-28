@@ -1,7 +1,9 @@
+"use strict"
+
 const express = require('express')
 const app = express()
 
-const port = 8081
+const port = 3000
 
 //middleware
 app.use((request, response, next) => {
@@ -9,8 +11,8 @@ app.use((request, response, next) => {
   next()
 })
 
-app.get('/', (request, response) => {
-  response.send('Hello World')
+app.get("/", (request, response) => {
+  response.send("Hello World")
 })
 
 app.listen(port, (err) => {
