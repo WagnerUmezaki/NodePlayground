@@ -1,0 +1,27 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "extends": "eslint:recommended",
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "eqeqeq": "error",
+    "no-caller": "warn",
+    "no-console": "warn",
+    "quotes": [
+      "warn",
+      "double",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "semi": [
+      "warn",
+      "never"
+    ]
+  }
+}
